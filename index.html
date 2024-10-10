@@ -1,89 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-  <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
-  <meta property="og:image:width" content="1200"/>
-  <meta property="og:image:height" content="630"/>
+  <head>
+    <meta charset="utf-8" />
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta
+      name="description"
+      content="Optima: A novel framework for training efficient and effective LLM-based multi-agent systems, significantly enhancing communication efficiency and task performance."
+    />
+    <meta
+      property="og:title"
+      content="Optima: Optimizing Effectiveness and Efficiency for LLM-Based Multi-Agent System"
+    />
+    <meta
+      property="og:description"
+      content="Discover Optima, a novel approach to training LLM-based multi-agent systems that achieves superior performance with significantly reduced token usage."
+    />
+    <meta property="og:url" content="URL OF THE WEBSITE" />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/overview.png" />
+    <meta property="og:image:width" content="1298" />
+    <meta property="og:image:height" content="665" />
 
+    <meta
+      name="twitter:title"
+      content="Optima: Optimizing Effectiveness and Efficiency for LLM-Based Multi-Agent System"
+    />
+    <meta
+      name="twitter:description"
+      content="Optima: A novel framework for training efficient and effective LLM-based multi-agent systems, significantly enhancing communication efficiency and task performance."
+    />
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/image/overview.png" />
+    <meta name="twitter:card" content="Optima Overview" />
+    <!-- Keywords for your paper to be indexed by-->
+    <meta
+      name="keywords"
+      content="LLM-Based Multi-Agent, Inference Scaling Law"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
-  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+      Optima: <u>Opti</u>mizing Effectiveness and Efficiency for LLM-Based
+      <u>M</u>ulti-<u>A</u>gent System
+    </title>
+    <link rel="icon" type="image/x-icon" href="static/images/logo.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+      rel="stylesheet"
+    />
 
+    <link rel="stylesheet" href="static/css/bulma.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css" />
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css" />
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
+    />
+    <link rel="stylesheet" href="static/css/index.css" />
 
-  <title>Academic Project Page</title>
-  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-  rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              <h1 class="title is-1 publication-title">
+                Optima: <u>Opti</u>mizing Effectiveness and Efficiency for
+                LLM-Based <u>M</u>ulti-<u>A</u>gent System
+              </h1>
+              <div class="is-size-5 publication-authors">
+                <!-- Paper authors -->
+                <span class="author-block"> Weize Chen<sup>*1</sup>,</span>
+                <span class="author-block"> Jiarui Yuan<sup>*1</sup>,</span>
+                <span class="author-block"> Chen Qian<sup>1</sup>, </span>
+                <span class="author-block"> Cheng Yang<sup>2</sup>,</span>
+                <span class="author-block"> Zhiyuan Liu<sup>1</sup>,</span>
+                <span class="author-block"> Maosong Sun<sup>1</sup>,</span>
+              </div>
 
-  <link rel="stylesheet" href="static/css/bulma.min.css">
-  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="static/css/index.css">
+              <div class="is-size-5 publication-authors">
+                <span class="author-block"
+                  ><sup>1</sup> Tsinghua University,</span
+                >
+                <br />
+                <span class="author-block"
+                  ><sup>2</sup> Beijing University of Posts and
+                  Telecommunications</span
+                >
+                <span class="eql-cntrb"
+                  ><small
+                    ><br /><sup>*</sup>Indicates Equal Contribution</small
+                  ></span
+                >
+              </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-  <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script src="static/js/bulma-carousel.min.js"></script>
-  <script src="static/js/bulma-slider.min.js"></script>
-  <script src="static/js/index.js"></script>
-</head>
-<body>
+              <div class="column has-text-centered">
+                <div class="publication-links">
+                  <!-- Arxiv PDF link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper</span>
+                    </a>
+                  </span> -->
 
-
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- Paper authors -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
-
-                  <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
-
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- Arxiv PDF link -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                  <!-- Supplementary PDF link -->
+                  <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,222 +128,364 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a
+                      href="https://github.com/YOUR REPO HERE"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <!-- ArXiv abstract Link -->
+                  <!-- <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/<ARXIV PAPER ID>"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span> -->
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
-
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+    <!-- Teaser video-->
+    <section class="hero teaser">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <center>
+            <img
+              src="static/images/performance_token.png"
+              alt="Teaser image"
+              class="teaser-image"
+              style="width: 80%"
+            />
+          </center>
+          <h2 class="subtitle has-text-centered">
+            <strong
+              >Performance and efficiency of Optima variants across optimization
+              iterations</strong
+            >. <strong>Left</strong> : Average performance gain over iterations.
+            Optima variants consistently outperform CoT, Multi-Agent Debate
+            (MAD), and Self-Consistency. <strong>Right</strong> : Average
+            inference token numbers over iterations. All Optima variants achieve
+            better performance with substantially fewer tokens.
+          </h2>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
+    <!-- End teaser video -->
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <!-- Paper abstract -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Large Language Model (LLM) based multi-agent systems (MAS) show
+                remarkable potential in collaborative problem-solving, yet they
+                still face critical challenges: low communication efficiency,
+                poor scalability, and a lack of effective parameter-updating
+                optimization methods for multi-agent collaboration. We present
+                <strong>Optima</strong>, a novel framework that addresses these
+                issues by significantly enhancing
+                <strong>both</strong> communication efficiency and task
+                effectiveness in LLM-based MAS through LLM training. At its
+                core, Optima employs an
+                <strong>iterative generate, rank, select, and train</strong>
+                paradigm, incorporating a reward function that balances task
+                performance, token efficiency, and communication readability. We
+                explore various RL algorithms, including Supervised Fine-Tuning,
+                Direct Preference Optimization, and their hybrid approaches,
+                providing insights into their effectiveness-efficiency
+                trade-offs for iterative LLM-based MAS training. Additionally,
+                we integrate Monte Carlo Tree Search-inspired techniques for DPO
+                data generation, conceptualizing conversation turns as tree
+                nodes to explore diverse interaction trajectories. We evaluate
+                Optima on common multi-agent tasks, including
+                information-asymmetric question answering and complex reasoning.
+                Our method demonstrates consistent and substantial improvements
+                over single-agent baselines and vanilla MAS based on Llama 3 8B,
+                achieving up to
+                <strong>2.8x performance gain with less than 10% tokens</strong>
+                on tasks requiring heavy multi-agent information exchange.
+                Moreover, Optima's efficiency gains open new possibilities for
+                leveraging inference-compute more effectively, potentially
+                leading to improved inference-time scaling laws. By addressing
+                fundamental challenges in multi-agent collaboration and
+                providing a novel optimization framework, Optima shows the
+                potential towards scalable, efficient, and effective LLM-based
+                MAS.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End youtube video -->
+    </section>
+    <!-- End paper abstract -->
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <div class="content">
+              <div class="level-set has-text-justified">
+                <p>
+                  We introduce Optima, a novel framework for training LLM-based
+                  multi-agent systems (MAS) that significantly enhances both
+                  communication efficiency and task effectiveness. Optima
+                  addresses key challenges in existing MAS implementations:
+                </p>
+                <ol>
+                  <li>
+                    Inefficient inter-agent communication leading to high token
+                    usage.
+                  </li>
+                  <li>
+                    Lack of systematic methods to optimize LLM-based MAS as a
+                    cohesive unit.
+                  </li>
+                </ol>
+                <p>
+                  Our approach provides a comprehensive solution to these
+                  challenges, demonstrating substantial improvements in both
+                  performance and efficiency.
+                </p>
+                <p>
+                  Optima employs an iterative
+                  <em>generate, rank, and train</em> paradigm, exploring
+                  Supervised Fine-Tuning (SFT) and Direct Preference
+                  Optimization (DPO), and the hybrid of them. We integrate a
+                  Monte Carlo Tree Search (MCTS)-inspired approach for
+                  high-quality DPO training data generation in multi-agent
+                  settings.
+                </p>
+                <p>
+                  Our framework balances task performance, token efficiency, and
+                  communication interpretability, leading to the development of
+                  effective, efficient, and interpretable multi-agent systems.
+                </p>
+                <br />
+              </div>
+              <img
+                src="static/images/overview.png"
+                alt="Overview of Optima Framework"
+                class="blend-img-background center-image"
+              />
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <div class="content">
+              <h2 class="title is-3">Performance and Efficiency Gains</h2>
+              <div class="level-set has-text-justified">
+                <p>
+                  Optima demonstrates significant improvements across various
+                  tasks, including information-asymmetric question answering and
+                  complex reasoning . Our method consistently outperforms
+                  single-agent baselines and vanilla multi-agent systems.
+                </p>
+                <img
+                  src="static/images/result_table_nobg.png"
+                  alt="Performance Comparison"
+                  class="center-image"
+                />
+                <div class="container mt-4">
+                  <div class="alert alert-success" role="alert">
+                    <strong>Key Results:</strong> Up to 90% reduction in token
+                    usage and 2.8x increase in task accuracy across diverse
+                    tasks.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small is-small">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <h2 class="title is-3">Inference Scaling Laws</h2>
+          <div class="level-set has-text-justified">
+            <p>
+              Since Optima trained model can solve problems with much less
+              tokens, these models show potential on improved inference scaling
+              laws, allowing for better performance at lower computational costs
+              or higher performance at the same cost.
+            </p>
+            <img
+              src="static/images/inference_scaling_law.png"
+              alt="Inference Scaling Laws"
+              class="center-image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <div class="content">
+              <h2 class="title is-3">Transferability</h2>
+              <div class="level-set has-text-justified">
+                <p>
+                  We demonstrate Optima's ability to transfer knowledge
+                  effectively across related tasks, showcasing its potential for
+                  developing adaptable multi-agent systems.
+                </p>
+                <center>
+                  <img
+                    src="static/images/transfer_nobg.png"
+                    alt="Transferability Results"
+                    class="center-image"
+                    style="width: 50%"
+                  />
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hero is-small">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <div class="content">
+              <h2 class="title is-3">Case Study: Communication Evolution</h2>
+              <div class="level-set has-text-justified">
+                <p>
+                  To illustrate the effectiveness of Optima in shaping agent
+                  communication, we present a case study showing the evolution
+                  of dialogue patterns across training iterations for
+                  Optima-iSFT on the 2WikiMultiHopQA (2WMH QA) task.
+                </p>
+                <img
+                  src="static/images/case.png"
+                  alt="Evolution of agent communication in Optima-iSFT"
+                  class="center-image"
+                />
+                <p class="image-caption">
+                  <strong
+                    >Figure: Evolution of agent communication in Optima-iSFT
+                    across iterations on 2WMH QA.</strong
+                  >
+                  The different contexts given to the two agents are omitted for
+                  brevity. The progression demonstrates increasing efficiency
+                  and task-oriented communication.
+                </p>
+                <p>
+                  This case study reveals how Optima progressively optimizes
+                  inter-agent communication:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Efficiency:</strong> As training progresses, we
+                    observe a significant reduction in the number of tokens
+                    used, demonstrating Optima's ability to encourage concise
+                    communication.
+                  </li>
+                  <li>
+                    <strong>Task Focus:</strong> Later iterations show more
+                    direct, task-oriented exchanges, with agents quickly honing
+                    in on relevant information.
+                  </li>
+                  <li>
+                    <strong>Information Synthesis:</strong> The evolved
+                    communication patterns show improved ability to synthesize
+                    information from multiple sources, a key requirement for the
+                    2WMH QA task.
+                  </li>
+                </ul>
+                <p>
+                  This evolution in communication patterns directly contributes
+                  to the performance improvements and token reductions observed
+                  in our quantitative results, showcasing Optima's effectiveness
+                  in optimizing multi-agent interactions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>Todo</code></pre>
+      </div>
+    </section>
+    <!--End BibTex citation -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This page was built using the
+                <a
+                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                  target="_blank"
+                  >Academic Project Page Template</a
+                >
+                which was adopted from the <a
+                  href="https://nerfies.github.io"
+                  target="_blank"
+                  >Nerfies</a
+                > project page. You are free to borrow the source code of this
+                website, we just ask that you link back to this page in the
+                footer. <br />
+                This website is licensed under a
+                <a
+                  rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/"
+                  target="_blank"
+                  >Creative Commons Attribution-ShareAlike 4.0 International
+                  License</a
+                >.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Statcounter tracking code -->
+
+    <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
     <!-- End of Statcounter Code -->
-
   </body>
-  </html>
+</html>
